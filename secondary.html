@@ -24,16 +24,39 @@
                 width: 400px;
                 margin: 20px;
             }
+            #container { overflow: hidden; }
+            #floated-imgs { float: right; }
+            #floated-imgs img {display: block; }
         </style>
     </head>
     <body>
         <div class="top">
             <h1 style="text-align: center; padding-bottom: 20px; padding-top: 40">About Me!</h1>
         </div>
-        <div><img style="display: block;" src="West.jpeg" alt="Image Failed to load"></div>
-        <br>
-        <div><img src="NSC.jpeg" alt="Image Failed to load"></div>
-        </br>
+        <nav class="navbar bg-success" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="secondary.html">About me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div id="container">
+            <div id="floated-imgs">
+                <img src="NSC.jpeg">
+                <img src="West.jpeg">
+            </div>
+        </div>
         <h2 class="margin-class">Welcome!</h2>
         <p class="margin-class">As I mentioned earlier, my name is Parth Choudhary, and I am 11 years old. I am currently in 9th grade in LFCA. I live on 3929 174th PL SE Bothell, WA. I have a hobby of coding and play soccer and swimming. For soccer I am on the NSC A team. For swimming, I am on the West Coast Aquatics swim team. I participate in an afterschool rocketry class particapating in the ARC (American Rocketry Challenge) competition. I have a dog named Dobby and am in a family of 4 where I am the youngest child.</p>
     </body>
