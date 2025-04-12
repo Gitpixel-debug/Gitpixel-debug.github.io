@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+<!--Secondary page connecting to Home page-->
+<html lang="end">
   <head>
     <title>
       About Me!
@@ -25,15 +27,14 @@
                 width: 400px;
                 margin: 20px;
             }
-            #container { overflow: hidden; }
-            #floated-imgs { float: right; }
-            #floated-imgs img {display: block; }
+            .floated-img { float: right; }
         </style>
     </head>
     <body>
         <div class="top">
             <h1 style="text-align: center; padding-bottom: 20px; padding-top: 40">About Me!</h1>
         </div>
+        <!--Problem: Style navbar-->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -45,8 +46,11 @@
                 </ul>
             </div>
         </nav>
-        <img id="NSC" src="NSC.jpeg" alt="Image did not load">
-        <img id="West" src="West.jpeg" alt="Image did not load">
+        <!--Problem: Resolve issue of img on same line. Make them go on different lines-->
+        <div class="floated-img">
+            <img id="NSC" src="NSC.jpeg" alt="Image did not load">
+            <img id="West" src="West.jpeg" alt="Image did not load">
+        </div>
         <h2 class="margin-class">Welcome!</h2>
         <p class="margin-class">As I mentioned earlier, my name is Parth Choudhary, and I am 11 years old. I am currently in 9th grade in LFCA. I live in Bothell, WA. I have a hobby of coding and play soccer and swimming. For soccer I am on the NSC A team. For swimming, I am on the West Coast Aquatics swim team. I participate in an afterschool rocketry class particapating in the ARC (American Rocketry Challenge) competition. I have a dog named Dobby and am in a family of 4 where I am the youngest child.</p>
     </body>
