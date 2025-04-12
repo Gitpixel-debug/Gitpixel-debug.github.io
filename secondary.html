@@ -1,43 +1,42 @@
-<html>
-  <head>
-    <title>
-      About Me!
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<!DOCTYPE html>
+<!--Secondary page connecting to Home page-->
+<html lang="end">
+    <head>
+        <title>About Me!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
         <style>
-            html, body {
-                background-color: lightgreen;
-                font-family: Georgia;
-                font-size: 25px;
-                color: black;
-                        }
-            .top {
-                height: 145px;
-                width: 100%;
-                background-color: darkgreen;
-            }
-            .margin-class {
-                margin-left: 35px;
-                margin-top: 50px;
-            }
-            #NSC, #West {
-                float: right;
-                width: 400px;
-                margin: 20px;
-            }
-            #container { overflow: hidden; }
-            #floated-imgs { float: right; }
-            #floated-imgs img {display: block; }
+                html, body {
+                    background-color: lightgreen;
+                    font-family: Georgia;
+                    font-size: 25px;
+                    color: black;
+                            }
+                .top {
+                    height: 145px;
+                    width: 100%;
+                    background-color: darkgreen;
+                }
+                .margin-class {
+                    margin-left: 35px;
+                    margin-top: 50px;
+                }
+                #floated-img { float: right; }
         </style>
     </head>
     <body>
         <div class="top">
-            <h1 style="text-align: center; padding-bottom: 20px; padding-top: 40">About Me!</h1>
+            <h1 style="text-align: center; padding-bottom: 20px; padding-top: 40px;">About Me!</h1>
         </div>
+        <!--Problem: Style navbar green-->
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#">My Website</a>
+                  <a class="navbar-brand" href="#" style="font-size: 25px;">My Website</a>
                 </div>
                 <ul class="nav navbar-nav">
                   <li class="active"><a href="index.html">Home</a></li>
@@ -45,9 +44,12 @@
                 </ul>
             </div>
         </nav>
-        <img id="NSC" src="NSC.jpeg" alt="Image did not load">
-        <img id="West" src="West.jpeg" alt="Image did not load">
-        <h2 class="margin-class">Welcome!</h2>
-        <p class="margin-class">As I mentioned earlier, my name is Parth Choudhary, and I am 11 years old. I am currently in 9th grade in LFCA. I live in Bothell, WA. I have a hobby of coding and play soccer and swimming. For soccer I am on the NSC A team. For swimming, I am on the West Coast Aquatics swim team. I participate in an afterschool rocketry class particapating in the ARC (American Rocketry Challenge) competition. I have a dog named Dobby and am in a family of 4 where I am the youngest child.</p>
+            <div id="floated-img">
+                <img id="NSC" src="NSC.jpeg" alt="Image did not load" style="height: 400px; margin: 20px;">
+                <div>&nbsp;</div>
+                <img id="West" src="West.jpeg" alt="Image did not load" style="width: 300px; margin: 20px;">
+            </div>
+            <h2 class="margin-class">Welcome!</h2>
+            <p class="margin-class">As I mentioned earlier, my name is Parth Choudhary, and I am 11 years old. I am currently in 9th grade in LFCA. I live in Bothell, WA. I have a hobby of coding and play soccer and swimming. For soccer I am on the NSC A team. For swimming, I am on the West Coast Aquatics swim team. I participate in an afterschool rocketry class particapating in the ARC (American Rocketry Challenge) competition. I have a dog named Dobby and am in a family of 4 where I am the youngest child.</p>
     </body>
 </html>
